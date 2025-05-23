@@ -1,0 +1,91 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+    .content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(https://htmldemo.net/pronia/pronia/assets/images/slider/bg/1-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+        .left {
+          width: 30%;
+          text-align: left;
+          #top {
+            font-size: 47px;
+            font-weight: 300;
+            color: #000;
+            text-transform: uppercase;
+          }
+          #center {
+            font-size: 90px;
+            font-weight: 400;
+            color: #000;
+            line-height: 1.2;
+            padding-bottom: 20px;
+          }
+          #bottom {
+            font-size: 22px;
+            font-weight: 400;
+            color: #000;
+            padding-bottom: 50px;
+          }
+
+          button {
+            padding: 20px 40px;
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 30px;
+            border: 1px solid orange;
+            background: #abd373;
+            color: #fff;
+            transition: .3s;
+            cursor: pointer;
+              &:hover {
+                transition: 0.3s;
+                background: gray;
+              }
+          }
+        }
+        .right {
+          padding: 20px;
+          width: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .content {
+      padding: 20px;
+      flex-direction: column-reverse;
+        .right {
+          width: 90%;
+            img {
+              width: 100%;
+              height: auto;
+            }
+        }
+        .left {
+          width: 90%;
+          text-align: center;
+          padding-top: 10px;
+            #top {
+              font-size:36px;
+            }
+          #center {
+            font-size:40px;
+          }
+          button {
+          }
+        }
+    }
+  }
+}
+

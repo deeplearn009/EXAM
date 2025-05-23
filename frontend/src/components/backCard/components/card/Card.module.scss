@@ -1,0 +1,32 @@
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    .image {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10px;
+        img {
+          width: 70%;
+          height: auto;
+        }
+    }
+  .desc {
+    width: 100%;
+     #name {
+       font-size: 18px;
+       font-weight: 400;
+       color: #303030;
+       padding-bottom: 5px;
+     }
+     #price {
+       font-size: 20px;
+       font-weight: 400;
+       color: #abd373;
+       padding-bottom: 10px;
+     }
+  }
+}
